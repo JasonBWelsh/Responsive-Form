@@ -71,9 +71,43 @@
 
 				</fieldset>
 
+				<div class="border-div"></div>
+
+				<fieldset>
+
+					<legend><h2>Newsletter</h2></legend>
+
+					<label>Search the Newsletter you would like to receive</label>
+					<input type="checkbox" id="html-checkbox" value="interest-html" name="user_interest">
+					<label for="html-checkbox">HTML News</label><br>
+
+					<input type="checkbox" id="css-checkbox" value="interest-css" name="user_interest">
+					<label for="css-checkbox">CSS News</label><br>
+
+					<input type="checkbox" id="js-checkbox" value="interest-js" name="user_interest">
+					<label for="js-checkbox">JavaScript News</label><br>
 			
 
+					<label>Newsletter Format</label>
+
+					<input type="radio" id="html-radio" value="format-html" name="user_format">
+					<label for="html-radio">HTML</label><br>
+
+					<input type="radio" id="text-radio" value="format-text" name="user_format">
+					<label for="text-radio">Plain text</label><br>
+
+					<label for="topics">Other topics you'd like to hear about</label>
+          <textarea id="topics" name="user_topics">You look tasty</textarea>
+
+				</fieldset>
+
+				<button type="submit">Sign Up</button>
+
 			</form>
+
+			<div class="form-footer">
+				<p>Copyright The Code Review</p>
+			</div><!--/.form-footer-->
 
 
 		</div><!--/.wrap-->
