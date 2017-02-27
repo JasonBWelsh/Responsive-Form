@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+/* Base Styles ***/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Droid Sans', Helvetica, Arial, Sans-Serif;
+	color: #656565;
+}
+
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 1.3rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: #2d3d56;
+}
+
+
+/* Header ***/
+
+.main-header {
+	width: 100%;
+	background: #2d3d56;
+	color: #fff;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.name {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/* Wrap ***/
+
+.wrap {
+	max-width: 320px;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin: 0 auto;
+	border: 1px solid black; /* remove this!!!!!!!!!!! */
+}
+
+/* Form Header ***/
+
+.form-header {
+	text-align: center;
+	border-bottom: 4px solid #2d3d56;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.form-header h2 {
+	margin-bottom: 0;
+}
+
+.form-header p {
+	margin-top: .6em;
+}
+
+/* Border Div ***/
+
+.border-div { /*sets border for fieldsets */
+	background: #2d3d56;
+	height: 2px;
+	margin-top: 5px;
+	margin-bottom: 2em;
+}
+
+/* Form ***/
+
+form {
+	width: 100%;
+}
+
+
+fieldset {
+	border: none;
+	padding: 0;
+}
+
+
+label {
+	display: block;
+}
