@@ -23,14 +23,14 @@
 					<p>Get the latest news on how your code is doing right in your inbox</p>
 			</div><!--/.form-header-->
 		
-			<div class="border-div"></div>
+			<div class="border-div"></div><!-- to put second border -->
 
 			
 			<form action="index.html" method="post">
 
 				<fieldset>
 
-					<legend><h2>Contact Information</h2></legend>
+					<legend class="contact-legend"><h2>Contact Information</h2></legend>
 
 					<label for="name">Full Name</label>
 					<input type="text" id="name" name="user_name" placeholder="required">
@@ -50,20 +50,24 @@
 
 					<label for="province">Province</label>
 					<select id="province" name="user_province">
-						<option value="" disabled selected>Choose Province</option>
-						<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-						<option value="Prince Edward Island">Prince Edward Island</option>
-						<option value="New Brunswick">New Brunswick</option>
-						<option value="Nova Scotia">Nova Scotia</option>
-						<option value="Quebec">Quebec</option>
-						<option value="Ontario">Ontario</option>
-						<option value="Manitoba">Manitoba</option>
-						<option value="Saskatchewan">Saskatchewan</option>
-						<option value="Alberta">Alberta</option>
-						<option value="British Columbia">British Columbia</option>
-						<option value="Yukon">Yukon</option>
-						<option value="Northwest Territories">Northwest Territories</option>
-						<option value="Nunavut">Nunavut</option>
+						<option value="" disabled selected>Choose Province/Territory</option>
+						<optgroup label="Provinces">
+							<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+							<option value="Prince Edward Island">Prince Edward Island</option>
+							<option value="New Brunswick">New Brunswick</option>
+							<option value="Nova Scotia">Nova Scotia</option>
+							<option value="Quebec">Quebec</option>
+							<option value="Ontario">Ontario</option>
+							<option value="Manitoba">Manitoba</option>
+							<option value="Saskatchewan">Saskatchewan</option>
+							<option value="Alberta">Alberta</option>
+							<option value="British Columbia">British Columbia</option>
+						</optgroup>
+						<optgroup label="Territories">
+							<option value="Yukon">Yukon</option>
+							<option value="Northwest Territories">Northwest Territories</option>
+							<option value="Nunavut">Nunavut</option>
+						</optgroup>
 					</select>
 
 					<label for="postal-code">Postal Code</label>
@@ -77,26 +81,26 @@
 
 					<legend><h2>Newsletter</h2></legend>
 
-					<label>Search the Newsletter you would like to receive</label>
+					<label class="news-label">Search the Newsletter you would like to receive</label>
 					<input type="checkbox" id="html-checkbox" value="interest-html" name="user_interest">
-					<label for="html-checkbox">HTML News</label><br>
+					<label for="html-checkbox" class="light">HTML News</label><br>
 
 					<input type="checkbox" id="css-checkbox" value="interest-css" name="user_interest">
-					<label for="css-checkbox">CSS News</label><br>
+					<label for="css-checkbox" class="light">CSS News</label><br>
 
 					<input type="checkbox" id="js-checkbox" value="interest-js" name="user_interest">
-					<label for="js-checkbox">JavaScript News</label><br>
+					<label for="js-checkbox" class="light">JavaScript News</label><br>
 			
 
-					<label>Newsletter Format</label>
+					<label class="news-label">Newsletter Format</label>
 
 					<input type="radio" id="html-radio" value="format-html" name="user_format">
-					<label for="html-radio">HTML</label><br>
+					<label for="html-radio" class="light">HTML</label><br>
 
 					<input type="radio" id="text-radio" value="format-text" name="user_format">
-					<label for="text-radio">Plain text</label><br>
+					<label for="text-radio" class="light">Plain text</label><br>
 
-					<label for="topics">Other topics you'd like to hear about</label>
+					<label for="topics" class="news-label">Other topics you'd like to hear about</label>
           <textarea id="topics" name="user_topics">You look tasty</textarea>
 
 				</fieldset>
