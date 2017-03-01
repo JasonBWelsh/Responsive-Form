@@ -10,16 +10,10 @@
 body {
 	margin: 0;
 	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+	font-size: .8rem;
 	color: #656565;
 }
 
-ul,
-ol,
-li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
 
 a {
 	text-decoration: none;
@@ -34,7 +28,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	color: #2d3d56;
 }
 
@@ -62,7 +56,6 @@ h2 {
 	padding-left: 1em;
 	padding-right: 1em;
 	margin: 0 auto;
-	/*border: 1px solid black;*/ /* remove this!!!!!!!!!!! */
 }
 
 /* Form Header ***/
@@ -233,24 +226,21 @@ button {
 		max-width: 480px;
 	}
 
-	label {
+	.contact-flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contact-flex label {
+		margin-right: auto;
+		margin-top: 15px;
 		display: inline-block;
 	}
 
-	input[type="text"],
-	input[type="password"],
-	input[type="date"],
-	input[type="datetime"],
-	input[type="email"],
-	input[type="number"],
-	input[type="search"],
-	input[type="tel"],
-	input[type="time"],
-	input[type="url"],
-	select {
+	.contact-flex input,
+	.contact-flex select {
 		display: inline-block;
 		width: 70%;
 	}
-
 
 }
