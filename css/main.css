@@ -9,7 +9,7 @@
 
 body {
 	margin: 0;
-	font-family: 'Droid Sans', Helvetica, Arial, Sans-Serif;
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
 	color: #656565;
 }
 
@@ -158,18 +158,27 @@ select {
 
 input:focus,
 textarea:focus {
-  border: solid 2px #017b82;
+  border: solid 1px #017b82;
   outline: none;
   text-align: left;
 }
 
-input[placeholder="required"] {
+/*input[placeholder="required"] {
 	font-style: italic;
 	text-align: right;
+	font-size: 0.75rem;
+}*/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	text-align: end;
+	font-style: italic;
+	font-size: 0.75rem;
 }
 
 textarea {
 	margin-bottom: 0;
+	/*background: rgba(1,123,130,.1);*/ /*#017b82;*/
+	background: #fff;
 }
 
 input[type="radio"],
@@ -177,10 +186,22 @@ input[type="checkbox"] {
   margin: 5px 4px 15px 0;
 }
 
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+	background: #017b82;
+}
+
 select {
   padding: 6px;
   height: 32px;
   border-radius: 2px;
+}
+
+section.news-field {
+	background: rgba(255,255,255,0.1);
+	background-color: #e8eeef;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 button {
@@ -196,4 +217,40 @@ button {
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
+}
+
+/* Form Footer ***/
+
+.form-footer p {
+	text-align: center;
+	font-style: italic;
+	font-size: .8rem;
+}
+
+@media screen and (min-width: 768px) {
+
+	.wrap {
+		max-width: 480px;
+	}
+
+	label {
+		display: inline-block;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	select {
+		display: inline-block;
+		width: 70%;
+	}
+
+
 }
