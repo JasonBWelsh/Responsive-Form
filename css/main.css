@@ -169,16 +169,27 @@ select {
   transition: background-color 0.5s, border-color 0.5s, transform 0.5s;
 }
 
+textarea {
+	-webkit-transition: background-color 1s, border-color 1s, transform 1s;
+  	transition: background-color 1s, border-color 1s, transform 1s;
+}
+
 select {
 	font-size: 0.8rem;
 	line-height: 1.5;
 }
 
 
-input:focus,
-select:focus,
 textarea:focus {
-  border: solid 1px #017b82;
+	background: #aeaeae;
+	color: #fff;
+	text-align: left;
+	outline: none;
+}
+
+input:focus,
+select:focus {
+  /*border: solid 1px #017b82;*/
   outline: none;
   text-align: left;
 }
@@ -216,10 +227,6 @@ input[type="radio"]:checked + label {
 	color: #017b82;
 }
 
-input[type="radio"]:checked,
-input[type="checkbox"]:checked {
-	background: #017b82;
-}
 
 select {
   padding: 6px;
