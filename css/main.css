@@ -29,7 +29,7 @@ h1 {
 
 h2 {
 	font-size: 1.1rem;
-	color: #2d3d56;
+	color: #017b82; /*#2d3d56;*/
 }
 
 
@@ -37,7 +37,7 @@ h2 {
 
 .main-header {
 	width: 100%;
-	background: #2d3d56;
+	background: #017b82; 
 	color: #fff;
 	text-align: center;
 	padding-top: 1em;
@@ -62,7 +62,7 @@ h2 {
 
 .form-header {
 	text-align: center;
-	border-bottom: 4px solid #2d3d56;
+	border-bottom: 4px solid #017b82; /*#2d3d56;*/
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
@@ -78,7 +78,7 @@ h2 {
 /* Border Div ***/
 
 .border-div { /*sets border for fieldsets */
-	background: #2d3d56;
+	background: #017b82; 
 	height: 2px;
 	margin-top: 5px;
 	margin-bottom: 2em;
@@ -87,13 +87,14 @@ h2 {
 /* .contact-wrap */
 
 .contact-wrap {
-	background-color: #2d3d56;
+	background-color: #017b82; 
 	border-radius: 5px;
 	padding-top: 1em;
 	padding-left: .5em;
 	padding-right: .5em;
 	color: #fff;
 }
+
 
 .contact-wrap h2 {
 	color: #fff;
@@ -102,7 +103,7 @@ h2 {
 .contact-wrap input:focus,
 .contact-wrap select:focus,
 .contact-wrap textarea:focus {
-	background: #017b82;
+	background: #03a4ad;
 	color: #fff;
 }
 
@@ -146,15 +147,9 @@ label.news-label {
 }
 
 input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
 input[type="email"],
-input[type="number"],
 input[type="search"],
 input[type="tel"],
-input[type="time"],
-input[type="url"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
@@ -170,6 +165,8 @@ select {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+  -webkit-transition: background-color 0.5s, border-color 0.5s, transform 0.5s;
+  transition: background-color 0.5s, border-color 0.5s, transform 0.5s;
 }
 
 select {
@@ -200,6 +197,7 @@ textarea {
 	margin-bottom: 0;
 	/*background: rgba(1,123,130,.1);*/ /*#017b82;*/
 	background: #fff;
+	border: none;
 }
 
 input[type="radio"],
@@ -222,12 +220,6 @@ input[type="radio"]:checked,
 input[type="checkbox"]:checked {
 	background: #017b82;
 }
-
-
-
-
-
-
 
 select {
   padding: 6px;
